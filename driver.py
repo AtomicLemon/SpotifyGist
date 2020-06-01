@@ -45,7 +45,7 @@ def main():
                 else:
                     artists[r['name']] = [math.log2(t), res['name']]
         artists = sorted(artists.items(), key=lambda x: (x[1][0], x[0]),
-                         reverse=True)[:10]
+                         reverse=True)[:30]
         freq = sum(x[1][0] for x in artists)
         for i, j in artists:
             bar = generateBarChart(j[0]/freq, 20)
