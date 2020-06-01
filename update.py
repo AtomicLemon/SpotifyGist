@@ -12,7 +12,7 @@ subprocess.call(["python", "driver.py"])
 
 g = Github(CREDS['TOKEN'])
 spotify_gist = g.get_gist(CREDS['GIST_ID'])
-spotify_gist_long_term = g.get_gist('20d9ea0342b543a1460fd13be64a7c60')
+#spotify_gist_long_term = g.get_gist('20d9ea0342b543a1460fd13be64a7c60')
 f = InputFileContent(main())
 eggs = InputFileContent(getlongterm())
 spotify_gist.edit('🎧 My music activity',
