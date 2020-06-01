@@ -1,4 +1,4 @@
-# Imports
+# -*- coding: utf-8 -*-
 import math
 
 import spotipy
