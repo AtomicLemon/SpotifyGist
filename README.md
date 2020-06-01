@@ -1,4 +1,4 @@
-# Spotify Pin
+# Spotify Gist
 
 ## About repo
 
@@ -13,46 +13,28 @@ Desi at Heart ❤️(Moosewala on top)
 1. Clone the repository
 
     ```bash
-    git clone https://github.com/puneet29/SpotifyPin.git
-    cd SpotifyPin
+    git clone https://github.com/AtomicLemon/SpotifyGist
+    cd SpotifyGist
     ```
-
-2. Create new virtual environment
-    - On windows:
-
-        ```bash
-        python -m venv venv
-        ```
-
-    - On Linux:
-
-        ```bash
-        python3 -m venv venv
-        ```
-
-3. Activate virtual environment
-    - On windows:
-
-        ```bash
-        venv\Scripts\activate
-        ```
-
-    - On Linux:
-
-        ```bash
-        . venv/bin/activate
-        ```
-
-4. Install all the dependencies
+2. Install all the dependencies
 
     ```bash
     pip3 install -r requirements
     ```
+3. You might want to set up a cronjob for the script to run once a day or sumfing like that 🤷
 
-5. Update ```credentials.py```. Generate new token for Gist privileges from Settings->Developer Options.
 
-6. Update ```driver.py```. Change the username to your own username.
+Update ```credentials.py```. Generate new token for Gist privileges from Settings->Developer Options.
 
-7. Update ```run.bat```. Update the path to cloned directory.
+Update ```driver.py```. Change the username to your own username.
 
-8. (For windows only) Setup a new task in task scheduler. Setup a time at which the run.bat file will run in background.
+Example `credentials.py`:
+
+```
+CLIENT_ID = "yourspotifyappclientid"
+CLIENT_SECRET = "yourspotifyappclientsecret"
+TOKEN = "yourgithubtokennn"
+GIST_ID = "07ed52ea6f9fc5b601b05aba849cb9eb"
+```
+
+Get spotify API keys here: https://developer.spotify.com/
