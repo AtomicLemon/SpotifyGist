@@ -8,7 +8,7 @@ from credentials import CREDS
 # Global variables
 CLIENT_ID = CREDS['CLIENT_ID']
 CLIENT_SECRET = CREDS['CLIENT_SECRET']
-USERNAME = 'Your username'
+USERNAME = 'sravg32i45e14z7vilrdm4hkt'
 SCOPE = 'user-top-read'  # user-read-recently-played
 
 
