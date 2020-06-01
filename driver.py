@@ -55,7 +55,7 @@ def main():
     else:
         return("Can't get token for", USERNAME)
 
-    def getlongterm():
+def getlongterm():
     # Token generation
     token = util.prompt_for_user_token(USERNAME, scope=SCOPE,
                                        client_id=CLIENT_ID,
