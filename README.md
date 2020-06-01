@@ -38,3 +38,8 @@ GIST_ID = "07ed52ea6f9fc5b601b05aba849cb9eb"
 ```
 
 Get spotify API keys here: https://developer.spotify.com/
+
+Example CronTab:
+```
+0 0 * * * python3 /home/myuser/SpotifyGist/update.py
+```
