@@ -12,5 +12,8 @@ subprocess.call(["python", "driver.py"])
 g = Github(CREDS['TOKEN'])
 spotify_gist = g.get_gist(CREDS['GIST_ID'])
 f = InputFileContent(main())
+eggs = InputFileContent(getlongterm())
 spotify_gist.edit('🎧 My music activity over the last 4 weeks',
                   {'🎧 My music activity over the last 4 weeks': f})
+spotify_gist.edit('🎧 My music activity over the last 6 months',
+                  {'🎧 My music activity over the last 6 months': eggs})
