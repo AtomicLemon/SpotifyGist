@@ -29,7 +29,7 @@ def main():
     token = util.prompt_for_user_token(USERNAME, scope=SCOPE,
                                        client_id=CLIENT_ID,
                                        client_secret=CLIENT_SECRET,
-                                       redirect_uri='http://examplee.com/')
+                                       redirect_uri='https://examplee.com/')
 
     # Driver code
     if token:
